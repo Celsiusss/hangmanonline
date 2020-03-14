@@ -9,20 +9,43 @@
       "npm --prefix \"$RESOURCE_DIR\" run build"
     ]
   },
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
+  "hosting": [
+    {
+      "target": "hangmanonline",
+      "public": "dist/hangmanonline",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "/hangmanonlineapp/us-central1/submitLetter",
+          "function": "submitLetter"
+        },
+        {
+          "source": "/hangmanonlineapp/us-central1/createGame",
+          "function": "createGame"
+        },
+        {
+          "source": "/hangmanonlineapp/us-central1/startGame",
+          "function": "startGame"
+        },
+        {
+          "source": "/hangmanonlineapp/us-central1/joinGame",
+          "function": "joinGame"
+        },
+        {
+          "source": "/hangmanonlineapp/us-central1/guessWord",
+          "function": "guessWord"
+        },
+        {
+          "source": "/hangmanonlineapp/us-central1/updateUsername",
+          "function": "updateUsername"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ],
   "emulators": {
     "functions": {
       "port": 5001

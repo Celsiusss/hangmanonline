@@ -1,0 +1,17 @@
+.char {
+  font-family: monospace;
+  white-space: pre;
+  text-decoration: underline;
+  font-size: 40px;
+  padding: 0 5px;
+}
+
+.word {
+  font-size: 40px;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+.used-letters {
+  text-transform: uppercase;
+}

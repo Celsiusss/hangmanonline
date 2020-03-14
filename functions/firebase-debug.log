@@ -1,0 +1,339 @@
+[debug] [2020-03-14T04:10:27.099Z] ----------------------------------------------------------------------
+[debug] [2020-03-14T04:10:27.102Z] Command:       /home/daniel/.nvm/versions/node/v13.10.1/bin/node /home/daniel/.nvm/versions/node/v13.10.1/bin/firebase emulators:start --only functions
+[debug] [2020-03-14T04:10:27.102Z] CLI Version:   7.14.0
+[debug] [2020-03-14T04:10:27.102Z] Platform:      linux
+[debug] [2020-03-14T04:10:27.102Z] Node Version:  v13.10.1
+[debug] [2020-03-14T04:10:27.103Z] Time:          Sat Mar 14 2020 05:10:27 GMT+0100 (Central European Standard Time)
+[debug] [2020-03-14T04:10:27.103Z] ----------------------------------------------------------------------
+[debug] [2020-03-14T04:10:27.103Z] 
+[debug] [2020-03-14T04:10:27.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-14T04:10:27.111Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-03-14T04:10:27.132Z] [hub] writing locator at /tmp/hub-hangmanonlineapp.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "13"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/home/daniel/dev/hangmanonline/functions" for Cloud Functions...
+[debug] [2020-03-14T04:10:27.168Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-14T04:10:27.168Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-14T04:10:27.168Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-14T04:10:27.169Z] [worker-~diagnostic~-d4371d42-f64f-401d-bbd8-aac997c23f9c]: Assigning socketPath: /tmp/fire_emu_17842.sock
+[debug] [2020-03-14T04:10:27.169Z] [worker-~diagnostic~-d4371d42-f64f-401d-bbd8-aac997c23f9c]: BUSY
+[debug] [2020-03-14T04:10:27.437Z] [runtime-status] [17842] Functions runtime initialized. {"cwd":"/home/daniel/dev/hangmanonline/functions","node_version":"13.10.1"}
+[debug] [2020-03-14T04:10:27.438Z] [runtime-status] [17842] Disabled runtime features: undefined
+[debug] [2020-03-14T04:10:27.440Z] [runtime-status] [17842] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:27.441Z] [runtime-status] [17842] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /home/daniel/.firebase-creds/handmanonline.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-14T04:10:27.612Z] [runtime-status] [17842] Found google-gax at /home/daniel/dev/hangmanonline/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-03-14T04:10:27.612Z] [runtime-status] [17842] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-03-14T04:10:27.645Z] [runtime-status] [17842] Checked functions.config() {"config":{}}
+[debug] [2020-03-14T04:10:27.646Z] [runtime-status] [17842] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:27.646Z] [runtime-status] [17842] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:27.647Z] [runtime-status] [17842] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:27.681Z] [runtime-status] [17842] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-03-14T04:10:27.723Z] [runtime-status] [17842] initializeApp(DEFAULT) {"databaseURL":"https://hangmanonlineapp.firebaseio.com","storageBucket":"hangmanonlineapp.appspot.com","projectId":"hangmanonlineapp"}
+[debug] [2020-03-14T04:10:27.767Z] Unsupported trigger: {"eventTrigger":{"resource":"projects/hangmanonlineapp","eventType":"providers/firebase.auth/eventTypes/user.create","service":"firebaseauth.googleapis.com"},"name":"newUser","entryPoint":"newUser"}
+[info] ✔  functions[submitLetter]: http function initialized (http://localhost:5001/hangmanonlineapp/us-central1/submitLetter).
+[info] ✔  functions[createGame]: http function initialized (http://localhost:5001/hangmanonlineapp/us-central1/createGame).
+[info] ✔  functions[startGame]: http function initialized (http://localhost:5001/hangmanonlineapp/us-central1/startGame).
+[info] ✔  functions[joinGame]: http function initialized (http://localhost:5001/hangmanonlineapp/us-central1/joinGame).
+[info] ✔  functions[guessWord]: http function initialized (http://localhost:5001/hangmanonlineapp/us-central1/guessWord).
+[info] ✔  functions[updateUsername]: http function initialized (http://localhost:5001/hangmanonlineapp/us-central1/updateUsername).
+[info] i  functions[newUser]: function ignored because the firebaseauth.googleapis.com emulator does not exist or is not running.
+[info] ✔  All emulators started, it is now safe to connect.
+[debug] [2020-03-14T04:10:27.769Z] [worker-~diagnostic~-d4371d42-f64f-401d-bbd8-aac997c23f9c]: IDLE
+[debug] [2020-03-14T04:10:43.018Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:43.019Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:43.019Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/createGame --> createGame
+[debug] [2020-03-14T04:10:43.026Z] [worker-pool] addWorker(createGame)
+[debug] [2020-03-14T04:10:43.026Z] [worker-pool] Adding worker with key createGame, total=1
+[debug] [2020-03-14T04:10:43.026Z] [worker-pool] submitWork(triggerId=createGame)
+[debug] [2020-03-14T04:10:43.026Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: Assigning socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:43.026Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: BUSY
+[debug] [2020-03-14T04:10:43.338Z] [runtime-status] [17852] Functions runtime initialized. {"cwd":"/home/daniel/dev/hangmanonline/functions","node_version":"13.10.1"}
+[debug] [2020-03-14T04:10:43.341Z] [runtime-status] [17852] Disabled runtime features: undefined
+[debug] [2020-03-14T04:10:43.343Z] [runtime-status] [17852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:43.345Z] [runtime-status] [17852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /home/daniel/.firebase-creds/handmanonline.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-14T04:10:43.522Z] [runtime-status] [17852] Found google-gax at /home/daniel/dev/hangmanonline/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-03-14T04:10:43.522Z] [runtime-status] [17852] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-03-14T04:10:43.558Z] [runtime-status] [17852] Checked functions.config() {"config":{}}
+[debug] [2020-03-14T04:10:43.559Z] [runtime-status] [17852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:43.560Z] [runtime-status] [17852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:43.561Z] [runtime-status] [17852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:43.598Z] [runtime-status] [17852] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-03-14T04:10:43.643Z] [runtime-status] [17852] initializeApp(DEFAULT) {"databaseURL":"https://hangmanonlineapp.firebaseio.com","storageBucket":"hangmanonlineapp.appspot.com","projectId":"hangmanonlineapp"}
+[debug] [2020-03-14T04:10:43.689Z] [runtime-status] [17852] Trigger "createGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "createGame"
+[debug] [2020-03-14T04:10:43.689Z] [runtime-status] [17852] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"createGame","entryPoint":"createGame"}
+[debug] [2020-03-14T04:10:43.690Z] [runtime-status] [17852] Running createGame in mode HTTPS
+[debug] [2020-03-14T04:10:43.693Z] [runtime-status] [17852] Attempting to listen to socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:43.696Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:43.704Z] [runtime-status] [17852] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:10:43.710Z] [runtime-status] [17852] Ephemeral server survived.
+[info] i  functions: Finished "createGame" in ~1s
+[debug] [2020-03-14T04:10:43.712Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: IDLE
+[debug] [2020-03-14T04:10:43.712Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:10:43.714Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:43.714Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:43.714Z] Accepted request POST /hangmanonlineapp/us-central1/createGame --> createGame
+[debug] [2020-03-14T04:10:43.714Z] [worker-pool] submitWork(triggerId=createGame)
+[debug] [2020-03-14T04:10:43.714Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: Assigning socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:43.714Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: BUSY
+[debug] [2020-03-14T04:10:43.722Z] [runtime-status] [17852] Trigger "createGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "createGame"
+[debug] [2020-03-14T04:10:43.722Z] [runtime-status] [17852] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"createGame","entryPoint":"createGame"}
+[debug] [2020-03-14T04:10:43.722Z] [runtime-status] [17852] Running createGame in mode HTTPS
+[debug] [2020-03-14T04:10:43.723Z] [runtime-status] [17852] Attempting to listen to socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:43.723Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:43.736Z] [runtime-status] [17852] Ephemeral server handling POST request
+[debug] [2020-03-14T04:10:43.781Z] [runtime-status] [17852] Ephemeral server survived.
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "createGame" in ~1s
+[debug] [2020-03-14T04:10:44.870Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: IDLE
+[debug] [2020-03-14T04:10:44.870Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:10:45.042Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:45.043Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:45.043Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:45.054Z] [worker-pool] addWorker(joinGame)
+[debug] [2020-03-14T04:10:45.054Z] [worker-pool] Adding worker with key joinGame, total=1
+[debug] [2020-03-14T04:10:45.054Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:45.055Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: Assigning socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:45.055Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: BUSY
+[debug] [2020-03-14T04:10:45.061Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-14T04:10:45.062Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-14T04:10:45.062Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:45.073Z] [worker-pool] addWorker(joinGame)
+[debug] [2020-03-14T04:10:45.074Z] [worker-pool] Adding worker with key joinGame, total=2
+[debug] [2020-03-14T04:10:45.074Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:45.075Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: Assigning socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:45.075Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: BUSY
+[debug] [2020-03-14T04:10:45.480Z] [runtime-status] [17864] Functions runtime initialized. {"cwd":"/home/daniel/dev/hangmanonline/functions","node_version":"13.10.1"}
+[debug] [2020-03-14T04:10:45.481Z] [runtime-status] [17870] Functions runtime initialized. {"cwd":"/home/daniel/dev/hangmanonline/functions","node_version":"13.10.1"}
+[debug] [2020-03-14T04:10:45.483Z] [runtime-status] [17870] Disabled runtime features: undefined
+[debug] [2020-03-14T04:10:45.483Z] [runtime-status] [17864] Disabled runtime features: undefined
+[debug] [2020-03-14T04:10:45.485Z] [runtime-status] [17870] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:45.485Z] [runtime-status] [17864] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:45.486Z] [runtime-status] [17870] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /home/daniel/.firebase-creds/handmanonline.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-14T04:10:45.487Z] [runtime-status] [17864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /home/daniel/.firebase-creds/handmanonline.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-03-14T04:10:45.660Z] [runtime-status] [17870] Found google-gax at /home/daniel/dev/hangmanonline/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-03-14T04:10:45.660Z] [runtime-status] [17870] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-03-14T04:10:45.662Z] [runtime-status] [17864] Found google-gax at /home/daniel/dev/hangmanonline/functions/node_modules/google-gax/build/src/index.js
+[debug] [2020-03-14T04:10:45.662Z] [runtime-status] [17864] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-03-14T04:10:45.696Z] [runtime-status] [17870] Checked functions.config() {"config":{}}
+[debug] [2020-03-14T04:10:45.697Z] [runtime-status] [17870] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:45.698Z] [runtime-status] [17870] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:45.699Z] [runtime-status] [17870] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:45.700Z] [runtime-status] [17864] Checked functions.config() {"config":{}}
+[debug] [2020-03-14T04:10:45.703Z] [runtime-status] [17864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:45.703Z] [runtime-status] [17864] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-14T04:10:45.703Z] [runtime-status] [17864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-14T04:10:45.736Z] [runtime-status] [17870] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-03-14T04:10:45.741Z] [runtime-status] [17864] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/daniel/dev/hangmanonline/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2020-03-14T04:10:45.783Z] [runtime-status] [17870] initializeApp(DEFAULT) {"databaseURL":"https://hangmanonlineapp.firebaseio.com","storageBucket":"hangmanonlineapp.appspot.com","projectId":"hangmanonlineapp"}
+[debug] [2020-03-14T04:10:45.788Z] [runtime-status] [17864] initializeApp(DEFAULT) {"databaseURL":"https://hangmanonlineapp.firebaseio.com","storageBucket":"hangmanonlineapp.appspot.com","projectId":"hangmanonlineapp"}
+[debug] [2020-03-14T04:10:45.826Z] [runtime-status] [17870] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:45.826Z] [runtime-status] [17870] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:45.826Z] [runtime-status] [17870] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:45.830Z] [runtime-status] [17870] Attempting to listen to socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:45.832Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:45.833Z] [runtime-status] [17864] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:45.834Z] [runtime-status] [17864] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:45.834Z] [runtime-status] [17864] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:45.837Z] [runtime-status] [17864] Attempting to listen to socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:45.838Z] [runtime-status] [17870] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:10:45.839Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:45.843Z] [runtime-status] [17870] Ephemeral server survived.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:45.845Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: IDLE
+[debug] [2020-03-14T04:10:45.845Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:45.846Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-14T04:10:45.846Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-14T04:10:45.846Z] Accepted request POST /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:45.846Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:45.847Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: Assigning socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:45.847Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: BUSY
+[debug] [2020-03-14T04:10:45.848Z] [runtime-status] [17864] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:10:45.851Z] [runtime-status] [17864] Ephemeral server survived.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:45.853Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: IDLE
+[debug] [2020-03-14T04:10:45.853Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:45.855Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-14T04:10:45.855Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-14T04:10:45.855Z] Accepted request POST /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:45.855Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:45.856Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: Assigning socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:45.856Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: BUSY
+[debug] [2020-03-14T04:10:45.857Z] [runtime-status] [17870] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:45.857Z] [runtime-status] [17870] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:45.857Z] [runtime-status] [17870] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:45.857Z] [runtime-status] [17870] Attempting to listen to socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:45.857Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:45.862Z] [runtime-status] [17864] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:45.863Z] [runtime-status] [17864] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:45.863Z] [runtime-status] [17864] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:45.864Z] [runtime-status] [17864] Attempting to listen to socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:45.865Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:45.873Z] [runtime-status] [17870] Ephemeral server handling POST request
+[debug] [2020-03-14T04:10:45.877Z] [runtime-status] [17864] Ephemeral server handling POST request
+[debug] [2020-03-14T04:10:45.922Z] [runtime-status] [17864] Ephemeral server survived.
+[debug] [2020-03-14T04:10:45.925Z] [runtime-status] [17870] Ephemeral server survived.
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:46.703Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: IDLE
+[debug] [2020-03-14T04:10:46.703Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:46.717Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: IDLE
+[debug] [2020-03-14T04:10:46.717Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:10:51.876Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:51.876Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:51.877Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/createGame --> createGame
+[debug] [2020-03-14T04:10:51.877Z] [worker-pool] submitWork(triggerId=createGame)
+[debug] [2020-03-14T04:10:51.877Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: Assigning socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:51.877Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: BUSY
+[debug] [2020-03-14T04:10:51.881Z] [runtime-status] [17852] Trigger "createGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "createGame"
+[debug] [2020-03-14T04:10:51.882Z] [runtime-status] [17852] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"createGame","entryPoint":"createGame"}
+[debug] [2020-03-14T04:10:51.882Z] [runtime-status] [17852] Running createGame in mode HTTPS
+[debug] [2020-03-14T04:10:51.883Z] [runtime-status] [17852] Attempting to listen to socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:51.884Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:51.890Z] [runtime-status] [17852] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:10:51.891Z] [runtime-status] [17852] Ephemeral server survived.
+[info] i  functions: Finished "createGame" in ~1s
+[debug] [2020-03-14T04:10:51.895Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: IDLE
+[debug] [2020-03-14T04:10:51.895Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:10:51.937Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:51.937Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:51.937Z] Accepted request POST /hangmanonlineapp/us-central1/createGame --> createGame
+[debug] [2020-03-14T04:10:51.938Z] [worker-pool] submitWork(triggerId=createGame)
+[debug] [2020-03-14T04:10:51.938Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: Assigning socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:51.938Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: BUSY
+[debug] [2020-03-14T04:10:51.941Z] [runtime-status] [17852] Trigger "createGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "createGame"
+[debug] [2020-03-14T04:10:51.942Z] [runtime-status] [17852] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"createGame","entryPoint":"createGame"}
+[debug] [2020-03-14T04:10:51.942Z] [runtime-status] [17852] Running createGame in mode HTTPS
+[debug] [2020-03-14T04:10:51.942Z] [runtime-status] [17852] Attempting to listen to socketPath: /tmp/fire_emu_17852.sock
+[debug] [2020-03-14T04:10:51.944Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:51.951Z] [runtime-status] [17852] Ephemeral server handling POST request
+[debug] [2020-03-14T04:10:51.953Z] [runtime-status] [17852] Ephemeral server survived.
+[info] i  functions: Finished "createGame" in ~1s
+[debug] [2020-03-14T04:10:52.233Z] [worker-createGame-70c3efa9-6ec1-4d41-83f0-2c62e0993345]: IDLE
+[debug] [2020-03-14T04:10:52.233Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:10:52.370Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:52.371Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:52.371Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:52.372Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:52.372Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: Assigning socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:52.372Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: BUSY
+[debug] [2020-03-14T04:10:52.376Z] [runtime-status] [17864] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:52.377Z] [runtime-status] [17864] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:52.377Z] [runtime-status] [17864] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:52.379Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-14T04:10:52.379Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-14T04:10:52.379Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:52.381Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:52.382Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: Assigning socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:52.382Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: BUSY
+[debug] [2020-03-14T04:10:52.386Z] [runtime-status] [17864] Attempting to listen to socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:52.387Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:52.391Z] [runtime-status] [17870] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:52.392Z] [runtime-status] [17870] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:52.392Z] [runtime-status] [17870] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:52.393Z] [runtime-status] [17870] Attempting to listen to socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:52.399Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:52.406Z] [runtime-status] [17864] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:10:52.407Z] [runtime-status] [17864] Ephemeral server survived.
+[debug] [2020-03-14T04:10:52.412Z] [runtime-status] [17870] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:10:52.412Z] [runtime-status] [17870] Ephemeral server survived.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:52.417Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: IDLE
+[debug] [2020-03-14T04:10:52.417Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:52.421Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: IDLE
+[debug] [2020-03-14T04:10:52.421Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:10:52.461Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:10:52.461Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:10:52.461Z] Accepted request POST /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:52.462Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:52.462Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: Assigning socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:52.462Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: BUSY
+[debug] [2020-03-14T04:10:52.466Z] [runtime-status] [17864] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:52.467Z] [runtime-status] [17864] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:52.467Z] [runtime-status] [17864] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:52.467Z] [runtime-status] [17864] Attempting to listen to socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:10:52.468Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-14T04:10:52.469Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-14T04:10:52.469Z] Accepted request POST /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:10:52.469Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:10:52.469Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: Assigning socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:52.471Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: BUSY
+[debug] [2020-03-14T04:10:52.474Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:52.477Z] [runtime-status] [17870] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:10:52.478Z] [runtime-status] [17870] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:10:52.478Z] [runtime-status] [17870] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:10:52.479Z] [runtime-status] [17870] Attempting to listen to socketPath: /tmp/fire_emu_17870.sock
+[debug] [2020-03-14T04:10:52.479Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:10:52.486Z] [runtime-status] [17864] Ephemeral server handling POST request
+[debug] [2020-03-14T04:10:52.486Z] [runtime-status] [17870] Ephemeral server handling POST request
+[debug] [2020-03-14T04:10:52.488Z] [runtime-status] [17870] Ephemeral server survived.
+[debug] [2020-03-14T04:10:52.490Z] [runtime-status] [17864] Ephemeral server survived.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:52.717Z] [worker-joinGame-c77f2207-cc2e-4394-bfc5-6df8b289f7aa]: IDLE
+[debug] [2020-03-14T04:10:52.717Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:10:52.730Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: IDLE
+[debug] [2020-03-14T04:10:52.730Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:11:29.761Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:11:29.761Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:11:29.761Z] Accepted request OPTIONS /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:11:29.761Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:11:29.762Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: Assigning socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:11:29.762Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: BUSY
+[debug] [2020-03-14T04:11:29.763Z] [runtime-status] [17864] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:11:29.764Z] [runtime-status] [17864] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:11:29.764Z] [runtime-status] [17864] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:11:29.764Z] [runtime-status] [17864] Attempting to listen to socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:11:29.765Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:11:29.768Z] [runtime-status] [17864] Ephemeral server handling OPTIONS request
+[debug] [2020-03-14T04:11:29.769Z] [runtime-status] [17864] Ephemeral server survived.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:11:29.770Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: IDLE
+[debug] [2020-03-14T04:11:29.770Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-14T04:11:29.773Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-14T04:11:29.774Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-14T04:11:29.774Z] Accepted request POST /hangmanonlineapp/us-central1/joinGame --> joinGame
+[debug] [2020-03-14T04:11:29.774Z] [worker-pool] submitWork(triggerId=joinGame)
+[debug] [2020-03-14T04:11:29.774Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: Assigning socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:11:29.774Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: BUSY
+[debug] [2020-03-14T04:11:29.780Z] [runtime-status] [17864] Trigger "joinGame" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "joinGame"
+[debug] [2020-03-14T04:11:29.780Z] [runtime-status] [17864] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"joinGame","entryPoint":"joinGame"}
+[debug] [2020-03-14T04:11:29.780Z] [runtime-status] [17864] Running joinGame in mode HTTPS
+[debug] [2020-03-14T04:11:29.781Z] [runtime-status] [17864] Attempting to listen to socketPath: /tmp/fire_emu_17864.sock
+[debug] [2020-03-14T04:11:29.783Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-14T04:11:29.786Z] [runtime-status] [17864] Ephemeral server handling POST request
+[debug] [2020-03-14T04:11:29.788Z] [runtime-status] [17864] Ephemeral server survived.
+[info] i  functions: Finished "joinGame" in ~1s
+[debug] [2020-03-14T04:11:30.001Z] [worker-joinGame-40b7acf5-3029-42d7-82ef-53570931c8d1]: IDLE
+[debug] [2020-03-14T04:11:30.002Z] [work-queue] {"queueLength":0,"workRunningCount":0}

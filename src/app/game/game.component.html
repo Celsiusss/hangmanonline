@@ -1,0 +1,78 @@
+<div *ngIf="afAuth.user | async as user">
+  <div *ngIf="gameService.initialized">
+    <hmo-display></hmo-display>
+    <div
+      *ngIf="
+        gameService.status == 'intermission' && gameService.winner;
+        else gameControls
+      "
+    >
+      <p class="timer-text">
+        Next game starting in
+        <span class="bold">{{ gameService.countdown }}</span>
+      </p>
+      <p class="winning-text">
+        <span class="bold">{{ gameService.winner.username }}</span> won the
+        game!
+      </p>
+    </div>
+
+    <ng-template #gameControls>
+      <p class="next-player" *ngIf="gameService.initialized">
+        Next player:
+        <span class="bold">{{
+          gameService.nextPlayer.uid === gameService.userId
+            ? 'you'
+            : gameService.nextPlayer.username
+        }}</span>
+      </p>
+
+      <hmo-keyboard
+        (keyPress)="onKeyPress($event)"
+        [wrongLetters]="gameService.guessed"
+      ></hmo-keyboard>
+      <form
+        (ngSubmit)="
+          gameService.submitWord(wordInput.value); wordInput.value = ''
+        "
+      >
+        <label>
+          Guess word
+          <input type="text" #wordInput />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </ng-template>
+  </div>
+
+  <p *ngIf="!gameService.initialized">
+    Game not yet started, waiting for host to start the game.
+  </p>
+
+  <button
+    *ngIf="!gameService.initialized && gameService.starter == user.uid"
+    (click)="gameService.startGame()"
+  >
+    Start game
+  </button>
+
+  <h3>Players</h3>
+  <ol>
+    <li
+      *ngFor="let player of gameService.players"
+      [class.bold]="
+        gameService.nextPlayer && player.uid == gameService.nextPlayer.uid
+      "
+    >
+      {{ player.username }}
+    </li>
+  </ol>
+
+  <form (ngSubmit)="gameService.updateUsername(username.value)">
+    <label>
+      Username
+      <input type="text" #username />
+    </label>
+    <button type="submit">Update</button>
+  </form>
+</div>

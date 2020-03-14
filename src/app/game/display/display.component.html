@@ -1,0 +1,10 @@
+<div>
+  <div>
+    <span class="word">
+    Word: <span class="char" *ngFor="let char of gameService.characters">{{char}}</span>
+  </span>
+  </div>
+  <div>
+    <p>Letters guessed: <span class="used-letters">{{gameService.guessed.join(', ')}}</span></p>
+  </div>
+</div>

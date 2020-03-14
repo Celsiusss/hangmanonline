@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "hangmanonlineapp"
+  },
+  "targets": {
+    "hangmanonlineapp": {
+      "hosting": {
+        "hangmanonline": [
+          "hangmanonlineapp"
+        ]
+      }
+    }
   }
 }

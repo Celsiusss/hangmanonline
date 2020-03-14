@@ -1,0 +1,7 @@
+<div class="keyboard">
+  <div class="keyboard-row" *ngFor="let row of keyboard">
+    <div class="keyboard-button-container" *ngFor="let char of row">
+      <button class="keyboard-button" (click)="addLetter(char)" [disabled]="wrongLetters.includes(char)">{{char}}</button>
+    </div>
+  </div>
+</div>
